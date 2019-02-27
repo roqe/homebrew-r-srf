@@ -52,8 +52,8 @@ class R < Formula
       "--enable-R-shlib",
       "SED=/usr/bin/sed", # don't remember Homebrew's sed shim
       "--with-tcltk", # SRF - Add tcl-tk support.
-      "--with-tcl-config=/System/Library/Frameworks/Tcl.framework/tclConfig.sh", # SRF - Point to system tcl config file (requires Command Line tools to be installed).
-      "--with-tk-config=/System/Library/Frameworks/Tk.framework/tkConfig.sh" # SRF - Point to system tk config file (requires Command Line tools to be installed).
+      "--with-tcl-config=/usr/local/opt/tcl-tk/lib/tclConfig.sh", # SRF - Point to system tcl config file (requires Command Line tools to be installed).
+      "--with-tk-config=/usr/local/opt/tcl-tk/lib/tkConfig.sh" # SRF - Point to system tk config file (requires Command Line tools to be installed).
     ]
 
     if build.with? "openblas"
